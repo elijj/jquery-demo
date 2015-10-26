@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>DOM Manipulation</title>
+  <title>DOMManipulation</title>
 
   <link rel="stylesheet" href="css/main.css"/>
 </head>
@@ -61,35 +61,35 @@
         <input type="text" name="content" id="newContent" placeholder="Some content...">
       </p>
       <p>
-        <button id="change-content" type="button" class="btn btn-default">Change Content</button>
+        <button id="change-content" type="submit" class="btn btn-default">Change Content</button>
         changes the content of the specified element
       </p>
       <p>
-        <button id="add-at-end" type="button" class="btn btn-default">Add At End</button> 
+        <button id="add-at-end" type="submit" class="btn btn-default">Add At End</button> 
         adds the content at the end of the element
       </p>
       <p>
-        <button id="add-at-start" type="button" class="btn btn-default">Add At Start</button> 
+        <button id="add-at-start" type="submit" class="btn btn-default">Add At Start</button> 
         add the content at the beginning of the element
       </p>
       <p>
-        <button id="insert-before" type="button" class="btn btn-default">Insert Before</button>
+        <button id="insert-before" type="submit" class="btn btn-default">Insert Before</button>
         adds the content <em>before</em> the element
       </p>
       <p>
-        <button id="move-after" type="button" class="btn btn-default">Move to After</button>
+        <button id="move-after" type="submit" class="btn btn-default">Move to After</button>
         moves the "element" to be after the element selected by the "content" (we're re-using the inputs, even if the labels don't match)
       </p>
       <p>
-        <button id="surround-class" type="button" class="btn btn-default">Surround with Class</button>
+        <button id="surround-class" type="submit" class="btn btn-default">Surround with Class</button>
         surrounds the element with a <code>&lt;div&gt;</code> with a <code>class</code> specified in the "content". You can use the classes in <code>main.css</code> or add your own!
       </p>
       <p>
-        <button id="hide-text" type="button" class="btn btn-default">Hide Long Text</button>
+        <button id="hide-text" type="submit" class="btn btn-default">Hide Long Text</button>
         surrounds the element with a <code>&lt;div class="hidden"&gt;</code> if its content is longer than 12 characters. <strong><em>Challenging!</em></strong>
       </p>
       <p>
-        <button id="remove-word" type="button" class="btn btn-default">Remove Word</button>
+        <button id="remove-word" type="submit" class="btn btn-default">Remove Word</button>
         removes the element if it contains the word specified in the "content"
       </p>
     </form>
@@ -102,6 +102,8 @@
 
   <!-- jQuery -->
   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- Include parse library here -->
+        <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
   <!-- your script file -->
   <script src="js/main.js"></script>
 </body>
